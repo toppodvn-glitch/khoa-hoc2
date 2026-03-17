@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Target, 
@@ -1277,6 +1278,7 @@ export default function App() {
       <Footer />
       <FOMOPopup />
       <RegistrationPopup />
+      <Analytics />
 
       {/* Fixed Bottom Buttons */}
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] w-[calc(100%-2rem)] max-w-md flex gap-3">
